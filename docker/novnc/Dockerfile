@@ -1,4 +1,4 @@
-FROM alpine:3.16
+FROM alpine:3.18
 
 ARG WWWGROUP
 ARG WWWUSER
@@ -23,7 +23,7 @@ RUN ln -s /usr/share/novnc/vnc.html /usr/share/novnc/index.html
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-EXPOSE 5173
+EXPOSE 8080
 
 RUN addgroup -g ${WWWGROUP} sail
 # do not log creating new user, otherwise there could be a lot of messages

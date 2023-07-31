@@ -17,4 +17,4 @@ USER sail
 # meaning the current user "node" is not root
 RUN id
 
-ENV CYPRESS_CACHE_FOLDER=/home/sail/.cache/Cypress/12.17.2/Cypress/Cypress
+ENV CYPRESS_CACHE_FOLDER=/home/sail/.cache/Cypress/
