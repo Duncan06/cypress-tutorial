@@ -1,4 +1,3 @@
-const vitePreprocessor = require('cypress-vite')
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
@@ -11,7 +10,7 @@ module.exports = defineConfig({
     fixturesFolder: 'tests/cypress/fixture',
     e2e: {
         setupNodeEvents(on, config) {
-            on('file:preprocessor', vitePreprocessor())
+            return require('./tests/cypress/plugins/index.js')(on, config)
         },
         baseUrl: 'http://localhost',
         specPattern: 'tests/cypress/integration/**/*.cy.{js,jsx,ts,tsx}',

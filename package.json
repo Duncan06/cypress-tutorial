@@ -8,7 +8,6 @@
     "devDependencies": {
         "axios": "^1.1.2",
         "cypress": "^12.17.2",
-        "cypress-vite": "^1.4.2",
         "laravel-vite-plugin": "^0.7.5",
         "vite": "^4.0.0"
     }
