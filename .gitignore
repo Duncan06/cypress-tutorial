@@ -6,6 +6,7 @@
 /storage/*.key
 /vendor
 .env
+.env.cypress
 .env.production
 .phpunit.result.cache
 Homestead.json
