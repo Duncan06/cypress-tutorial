@@ -10,7 +10,7 @@ module.exports = defineConfig({
     fixturesFolder: 'tests/cypress/fixture',
     e2e: {
         setupNodeEvents(on, config) {
-            return require('./tests/cypress/plugins/index.js')(on, config)
+            return require('./tests/cypress/plugins/index.cjs')(on, config)
         },
         baseUrl: 'http://localhost',
         specPattern: 'tests/cypress/integration/**/*.cy.{js,jsx,ts,tsx}',
