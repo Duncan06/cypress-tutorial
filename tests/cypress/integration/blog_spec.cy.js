@@ -4,7 +4,7 @@ describe('Blog', () => {
     });
 
     it('shows all posts', () => {
-        cy.create('App\\Post', {
+        cy.create('App\\Models\\Post', {
             title: 'My First Post'
         });
 
