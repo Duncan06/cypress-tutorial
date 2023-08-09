@@ -114,7 +114,7 @@
     "name": null,
     "domain": null,
     "action": "Closure",
-    "uri": "blog",
+    "uri": "posts",
     "method": [
       "GET",
       "HEAD"

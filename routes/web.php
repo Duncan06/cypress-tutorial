@@ -23,3 +23,10 @@ Route::get('/blog', function () {
         'posts' => Post::all()
     ]);
 });
+
+Route::get('/posts', function() {
+    return collect([
+        ['title' => 'My First Post'],
+        ['title' => 'My Second Post'],
+    ]);
+});
