@@ -30,3 +30,11 @@ Route::get('/posts', function() {
         ['title' => 'My Second Post'],
     ]);
 });
+
+Route::get('/iframe_home', function() {
+    return view('iframe_home');
+});
+
+Route::get('iframe', function() {
+    return view('iframe');
+});
