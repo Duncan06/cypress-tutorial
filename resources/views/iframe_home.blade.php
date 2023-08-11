@@ -11,8 +11,8 @@
     let loadIframe = () => {
         let iframe = document.querySelector('iframe');
 
-        iframe.setAttribute('src', 'http://localhost/iframe');
+        iframe.setAttribute('src', 'http://laravel.test/iframe');
     }
 
-    loadIframe();
+    setTimeout(loadIframe, 2000);
 </script>

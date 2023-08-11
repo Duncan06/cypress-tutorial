@@ -1,5 +1,7 @@
 it('works with iframes', () => {
     cy.visit('/iframe_home');
 
-    cy.get('iframe').its('0.contentDocument.body');
+    cy.getIframe()
+        .find('#iframe-button')
+        .should('have.text', 'Click Me');
 });
